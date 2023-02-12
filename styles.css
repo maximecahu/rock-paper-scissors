@@ -46,21 +46,20 @@ header {
 .scoreYou,
 .scorePc,
 .round {
-    background-color: brown;
-    border: 1rem solid;
-    border-color: aliceblue;
     margin-top: 1rem;
+    font-family: "Old Standard TT", serif;
+    font-size: xx-large;
 }
 
 .imageYou,
 .imagePc,
-.VS {
+.imageVS {
     background-color: blue;
     margin-bottom: 5rem;
 }
 
 .choices {
-    background-color: black;
+    background-color: rgba(255, 228, 196, 0.3);
     width: 60rem;
     height: 10rem;
     display: flex;
@@ -86,8 +85,19 @@ header {
     border-radius: 5px;
 }
 
+.imageVS {
+    background-color: rgba(255, 228, 196, 0);
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    animation: breathing 5s ease-in-out infinite;
+}
+
 .imagePc {
-    background-color: rgb(182, 0, 39);
+    background-color: rgba(182, 0, 39, 0);
     width: 12rem;
     height: 12rem;
     display: flex;
@@ -99,4 +109,103 @@ header {
 img {
     height: 10rem;
     width: 10rem;
+}
+
+div>.centerPart {
+    background-color: rgba(165, 42, 42, 0);
+}
+
+.shaking-imageVS {
+    background-color: rgba(255, 228, 196, 0);
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    animation: shake 0.5s ease-in-out;
+}
+
+.win-imageVS {
+    background-color: rgba(255, 228, 196, 0);
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    animation: zoom 1s ease-in;
+}
+
+.imagePc,
+.imageYou {
+    animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(-10px);
+    }
+
+    20% {
+        transform: translateX(10px);
+    }
+
+    30% {
+        transform: translateX(-10px);
+    }
+
+    40% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
 }
