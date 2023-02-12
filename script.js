@@ -89,15 +89,6 @@ function play(userInput) {
 
     }, 2000);
 
-    if (userScore === 5) {
-        imgElement.src = "images/youWin.png";
-
-
-
-    } else if (computerScore === 5) {
-        imgElement.src = "images/youLose.png";
-
-    }
 
 
 
