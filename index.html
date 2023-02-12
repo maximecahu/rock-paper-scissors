@@ -6,10 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 
 <body>
+
+    <header>ROCK PAPER SCISSORS</header>
+    <div class="playground">
+
+        <div class="you">
+            <div id="scoreYou" class="scoreYou">0</div>
+
+
+            <img id="imageYou" class="imageYou" src="images/rock.png" alt="you">
+
+        </div>
+
+
+        <div class="centerPart">
+            <div id="round" class="round">Round 1!</div>
+            <img class="imageVS" src="images/VS.png" alt="vs">
+        </div>
+
+        <div class="pc">
+            <div id="scorePc" class="scorePc">0</div>
+            <img id="imagePc" class="imagePc" src="images/scissors2.png" alt="pc">
+        </div>
+
+    </div>
+    <div class="choices">
+        <button id="rock" onclick="play('rock')">Rock</button>
+        <button id="paper" onclick="play('paper')">Paper</button>
+        <button id="scissors" onclick="play('scissors')">Scissors</button>
+    </div>
 
 </body>
 
