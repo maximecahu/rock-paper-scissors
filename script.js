@@ -9,8 +9,8 @@ else computer wins
 */
 
 
-let userScore = 4;
-let computerScore = 4;
+let userScore = 0;
+let computerScore = 0;
 let roundNumber = 1;
 let imgElement = document.getElementById("imageVS");
 
