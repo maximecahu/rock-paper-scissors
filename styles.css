@@ -19,6 +19,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Old Standard TT", serif;
+    font-size: xx-large;
 }
 
 .playground {
@@ -30,6 +32,18 @@ header {
     height: 30rem;
     width: 60rem;
     margin-bottom: 5rem;
+}
+
+.photo {
+    height: 5rem;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#photoYou {
+    height: 3rem;
+    margin-bottom: 2rem;
 }
 
 .playground>div {
@@ -49,6 +63,14 @@ header {
     margin-top: 1rem;
     font-family: "Old Standard TT", serif;
     font-size: xx-large;
+}
+
+.zoom-scoreYou,
+.zoom-scorePc {
+    margin-top: 1rem;
+    font-family: "Old Standard TT", serif;
+    font-size: xx-large;
+    animation: breathing 0.5s ease-in-out;
 }
 
 .imageYou,
@@ -72,6 +94,8 @@ header {
     width: 10rem;
     background-color: bisque;
     border-radius: 20px;
+    font-family: "Old Standard TT", serif;
+    font-size: x-large;
 
 }
 
